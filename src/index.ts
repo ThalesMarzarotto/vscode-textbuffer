@@ -3,7 +3,7 @@ import { DefaultEndOfLine, PieceTreeTextBufferBuilder } from './pieceTreeBuilder
 
 
 const pieceTreeTextBufferBuilder = new PieceTreeTextBufferBuilder();
-pieceTreeTextBufferBuilder.acceptChunk('abc\ndef\n');
+pieceTreeTextBufferBuilder.acceptChunk('ab\ncdef\n');
 
 pieceTreeTextBufferBuilder.acceptChunk('def');
 pieceTreeTextBufferBuilder.acceptChunk('def\n');
@@ -16,7 +16,6 @@ pieceTree.getLineCount(); // 2
 
 
 pieceTree.insert(10, '+');
-
 
 // pieceTree.getLineContent(1); // 'a+bc'
 pieceTree.getLineContent(2); // 'def'

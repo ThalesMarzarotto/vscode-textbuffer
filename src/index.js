@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var pieceTreeBuilder_1 = require("./pieceTreeBuilder");
 var pieceTreeTextBufferBuilder = new pieceTreeBuilder_1.PieceTreeTextBufferBuilder();
-pieceTreeTextBufferBuilder.acceptChunk('abc\ndef\n');
+pieceTreeTextBufferBuilder.acceptChunk('ab\ncdef\n');
 pieceTreeTextBufferBuilder.acceptChunk('def');
 pieceTreeTextBufferBuilder.acceptChunk('def\n');
 pieceTreeTextBufferBuilder.acceptChunk('def\n');
